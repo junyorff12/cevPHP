@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="_css/estilo.css"/>
-  <title></title>
+  <title>PHP 7</title>
 </head>
 <body>
 <div>
     <?php
-       $nome = "Maria";
-       $idade = 18;
+       $nome = "Junyor";
+       $idade = 30;
        echo "$nome tem $idade anos!";
     ?>
 </div>
