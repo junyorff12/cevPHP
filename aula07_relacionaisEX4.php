@@ -8,12 +8,11 @@
 <body>
 <div>
     <?php
-    $n1 = $_GET["a"];
-    $n2 = $_GET["b"];
-    $tipo = $_GET["op"];
-    echo "Os valores passados foram $n1 e $n2<br />";
-    $r = ($tipo=="s")?$n1+$n2:$n1*$n2;
-    echo "O resultado será $r.";
+    $ano = $_GET["an"];
+    $idade = 2017- $ano;
+    echo "Quem nasceu em $ano tem $idade anos de idade.";
+    $tipo = ($idade>=18 && $idade<65)?"OBRIGATORIO":"NO OBIGATORIO";
+    echo "<br />e o voto é $tipo.";
     ?>
 </div>
 </body>

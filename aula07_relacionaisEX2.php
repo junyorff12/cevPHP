@@ -8,12 +8,10 @@
 <body>
 <div>
     <?php
-    $n1 = $_GET["a"];
-    $n2 = $_GET["b"];
-    $tipo = $_GET["op"];
-    echo "Os valores passados foram $n1 e $n2<br />";
-    $r = ($tipo=="s")?$n1+$n2:$n1*$n2;
-    echo "O resultado será $r.";
+    $a = 3;
+    $b = "3";
+    $r = ($a==$b)?"SIM":"NAO";//igual mas nçao do mesmo tipo, === identico e do mesmo tipo.
+    echo "As variaveis A e B sao iguais? $r";
     ?>
 </div>
 </body>
