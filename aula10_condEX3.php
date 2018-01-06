@@ -17,7 +17,7 @@
         case 14:
         case 27:
         case 22:
-          echo "Região Norte";
+          $r = "Regiao Norte";
           break;
         case 10:
         case 18:
@@ -28,17 +28,30 @@
         case 26:
         case 2:
         case 5:
-            echo "Região Nordeste";
-            break;
+          $r = "Região Nordeste";
+          break;  
         case 12:
         case 21:
         case 9:
-            echo "Região Centro-Oeste";
-            break;
-          # code...
+          $r = "Região Centro-Oeste";
           break;
+        case 25:
+        case 19:
+        case 8:
+        case 13:    
+          $r = "Região sudeste";
+         
+          break;
+        case 16:
+        case 22:
+        case 24:
+          $r = "Região Sul";
+        
+          break;   
       }
+      echo "Voce esta na $r";
     ?>
+    <br/><a href="aula10_condEX3.html">Voltar</a>
 </div>
 </body>
 </html>
