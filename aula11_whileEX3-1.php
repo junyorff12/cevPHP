@@ -11,20 +11,23 @@
     	$ini = isset($_GET["ini"])?$_GET["ini"]:0;
     	$fin = isset($_GET["fin"])?$_GET["fin"]:2;
     	$inc = isset($_GET["inc"])?$_GET["inc"]:1;
-    	if ($ini>$fin) {
+    	if ($ini<$fin) {
     		while ($ini<=$fin) {
-    			echo $ini;
+    			echo "$ini ";
     			$ini += $inc;
     		    
     		}
-    	elseif ($ini<$fin) {
-    		while (expr) {
-    		    
+    	}		
+    	elseif ($ini>$fin) {
+    		while ($ini>=$fin) {
+    		    echo "$ini ";
+    		    $ini -= $inc;
     		}
-    	 	
-    	 } 	
-    		
-    	}
+    	  } 
+    	else {
+    	  		echo 'Opcão invalida';
+    	  	}	
+    	
     ?>
     <br/><a href="aula11_whileEX3.php">Voltar</a>
 </div>
